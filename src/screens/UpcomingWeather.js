@@ -29,11 +29,10 @@ const UpcomingWeather = ({weatherData}) => {
             <FlatList 
                 data={weatherData}
                 renderItem={renderItem} 
-                keyExtractor={(item) => item.dt_text }
+                keyExtractor={(item) => dt_text }
             />
             </ImageBackground>
         </SafeAreaView>
-        
         
     )
 }
